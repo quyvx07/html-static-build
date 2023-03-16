@@ -1,0 +1,42 @@
+body {
+  position: relative;
+}
+
+#__overlay-toggle__ {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 9991;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#__overlay-toggle__:hover {
+  background-color: #00A3AD;
+}
+
+#__overlay__ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  z-index: 9990;
+  opacity: 0.25;
+  display: none;
+}
+#__overlay__.show {
+  display: block;
+}
+#__overlay__.hide {
+  display: none;
+}
+
+.home-page .__overlay__bg {
+  background: no-repeat center center url("./src/images/sample-design/home.jpg") transparent;
+  height: 6500px;
+}
+/*# sourceMappingURL=only-for-debug.css.map */
